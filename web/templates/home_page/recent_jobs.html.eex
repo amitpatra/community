@@ -1,1 +1,17 @@
-<%= render Community.JobView, "job_list.html", jobs: @jobs, conn: @conn %>
+<section class="section">
+  <div class="section-description">
+    <h4>Recent Jobs</h4>
+    <p>In nibh orci, tincidunt et euismod in, iaculis id mauris. Mauris quis
+    varius ex. Aliquam fringilla, quam vel molestie accumsan, orci lacus
+    efficitur dolor, non consequat libero felis in tortor.</p>
+    <%= link(
+      {:safe, "View More &rarr;"},
+      to: member_path(@conn, :index),
+      class: "appended-link"
+    ) %>
+  </div>
+
+  <div class="section-content">
+    <%= render Community.JobView, "job_list.html", jobs: @jobs, conn: @conn %>
+  </div>
+</section>
