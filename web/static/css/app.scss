@@ -8,6 +8,9 @@
 @import "base/base";
 
 // Components
+@import "flex";
+
+// Components
 @import "alert";
 @import "appended-link";
 @import "bulleted-list";
@@ -33,3 +36,22 @@
 
 // Vendor Overrides
 @import "vendor-overrides/trix";
+
+.hero {
+  @include margin(null (-$large-spacing));
+  background-image: url("/images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: $x-large-spacing;
+  padding: ($large-spacing * 3) $large-spacing;
+
+  p {
+    line-height: 1.2;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 0;
+    text-align: center;
+    z-index: 1;
+  }
+}

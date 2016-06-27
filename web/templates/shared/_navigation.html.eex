@@ -3,9 +3,6 @@
     <%= link("Home", to: "/", class: "home-link") %>
   </li>
   <li>
-    <%= link("Job Board", to: job_path(@conn, :index), class: "jobs-link") %>
-  </li>
-  <li>
     <%= link(
       "Member Directory",
       to: member_path(@conn, :index),

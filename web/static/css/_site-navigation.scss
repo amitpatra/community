@@ -1,27 +1,17 @@
 .site-navigation {
-  margin-bottom: $base-spacing;
-  text-align: center;
-
   li {
+    @include margin(null $base-spacing $large-spacing null);
     display: inline-block;
   }
 
   a {
-    color: $lighter-font-color;
     display: inline-block;
-    font-size: $small-font-size;
-    font-weight: 600;
-    padding: $small-spacing;
-
-    &:hover,
-    &:focus {
-      color: $action-color;
-    }
+    padding-bottom: 0.125em;
   }
 }
 
 .home-page .home-link,
 .job .jobs-link,
 .member .members-link {
-  color: $action-color;
+  border-bottom: 1px solid $action-color;
 }

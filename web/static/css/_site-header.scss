@@ -1,4 +1,5 @@
 .site-header {
+  // text-align: center;
   padding-top: $base-spacing;
 
   @include media($medium-screen-up) {
@@ -7,22 +8,15 @@
 }
 
 .site-header-title {
-  margin-bottom: $base-spacing;
-  text-align: center;
+  font-size: 1.25em;
+  letter-spacing: 0.2em;
+  margin-bottom: $x-small-spacing;
+  text-transform: uppercase;
+  // font-style: italic;
+  font-weight: 200;
+  font-weight: 800;
 }
 
 .site-header-title-link {
-  @include hide-text;
-  @include margin(null auto);
-  @include size(284px, 203px);
-  background-image: url("/images/logo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: block;
-  transition: opacity 0.15s ease-in;
-
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
+  color: $base-font-color;
 }

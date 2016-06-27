@@ -1,36 +1,12 @@
-.section {
-  border-top: $base-border;
-  margin-bottom: $x-large-spacing;
-  padding-top: $large-spacing;
-
-  @include media($medium-screen-up) {
-    display: flex;
-  }
+.section-title {
+  font-size: 2.25em;
+  font-weight: 400;
+  margin-bottom: 0.25em;
 }
 
 .section-description {
+  font-size: 1.25em;
+  // font-style: italic;
+  color: $light-font-color;
   margin-bottom: $large-spacing;
-
-  @include media($medium-screen-up) {
-    margin-right: 8%;
-    width: 20em;
-  }
-
-  p {
-    color: $light-font-color;
-    font-size: $small-font-size;
-  }
-}
-
-.section-content {
-  flex: 1;
-}
-
-.section-description-action {
-  margin-top: $base-spacing;
-  width: 100%;
-
-  @include media($medium-screen-up) {
-    width: initial;
-  }
 }

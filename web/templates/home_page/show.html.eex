@@ -1,8 +1,9 @@
-<p class="page-description">
-  A resource for designers in Raleigh to stay connected and find prospective
-  career opportunities. Follow along on twitter,
-  <a href="http://twitter.com/raleighdesignio">@raleighdesignio</a>.
-</p>
+<div class="hero">
+  <p>
+    A resource for designers in Raleigh to stay connected and find career
+    opportunities.
+  </p>
+</div>
 
 <%= render "recent_jobs.html", jobs: @jobs, conn: @conn %>
 

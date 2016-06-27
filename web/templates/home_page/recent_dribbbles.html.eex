@@ -1,27 +1,23 @@
-<section class="section">
-  <div class="section-description">
-    <h4>Recent Dribbbles</h4>
-    <p>
-      Show and tell from the Raleigh Design community.
-      <%= link(
-          "Add yourself to the directory", to:
-          member_path(@conn, :new),
-      ) %>
-      to see your work featured here.
-    </p>
-  </div>
+<h2 class="section-title">Recent Dribbbles</h2>
+<p class="section-description">
+  Show and tell from the Raleigh Design community.
+  <%= link(
+      "Add yourself to the directory", to:
+      member_path(@conn, :new),
+  ) %>
+  to see your work featured here.
+</p>
 
-  <ol
-    class="section-content dribbbles"
-    data-role="dribbble-list"
-    data-access-token="<%= System.get_env("DRIBBBLE_ACCESS_TOKEN") %>"
-    data-bucket-id="<%= System.get_env("DRIBBBLE_BUCKET_ID") %>"
-    data-count="6"
-    >
-    <li class="dribbble" data-role="dribbble-shot" style="display:none">
-      <a class="dribbble-link" href="#">
-        <img class="dribbble-img" src="">
-      </a>
-    </li>
-  </ol>
-</section>
+<ol
+  class="dribbbles"
+  data-role="dribbble-list"
+  data-access-token="<%= System.get_env("DRIBBBLE_ACCESS_TOKEN") %>"
+  data-bucket-id="<%= System.get_env("DRIBBBLE_BUCKET_ID") %>"
+  data-count="6"
+  >
+  <li class="dribbble" data-role="dribbble-shot" style="display:none">
+    <a class="dribbble-link" href="#">
+      <img class="dribbble-img" src="">
+    </a>
+  </li>
+</ol>

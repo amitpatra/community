@@ -1,7 +1,7 @@
 .dribbbles {
-  display: flex;
-  flex-wrap: wrap;
+  @include row;
   justify-content: space-between;
+  margin-bottom: $x-large-spacing;
 }
 
 .dribbble {

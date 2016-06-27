@@ -10,6 +10,51 @@
         </div>
         <p class="job-slat-city"><%= job.city %></p>
       </li>
+      <li class="job-slat">
+        <div class="job-slat-hgroup">
+          <h3 class="job-slat-title">
+            <%= link job.title, to: job_path(@conn, :show, job) %>
+          </h3>
+          <p class="job-slat-company"><%= job.company %></p>
+        </div>
+        <p class="job-slat-city"><%= job.city %></p>
+      </li>
+      <li class="job-slat">
+        <div class="job-slat-hgroup">
+          <h3 class="job-slat-title">
+            <%= link job.title, to: job_path(@conn, :show, job) %>
+          </h3>
+          <p class="job-slat-company"><%= job.company %></p>
+        </div>
+        <p class="job-slat-city"><%= job.city %></p>
+      </li>
+      <li class="job-slat">
+        <div class="job-slat-hgroup">
+          <h3 class="job-slat-title">
+            <%= link job.title, to: job_path(@conn, :show, job) %>
+          </h3>
+          <p class="job-slat-company"><%= job.company %></p>
+        </div>
+        <p class="job-slat-city"><%= job.city %></p>
+      </li>
+      <li class="job-slat">
+        <div class="job-slat-hgroup">
+          <h3 class="job-slat-title">
+            <%= link job.title, to: job_path(@conn, :show, job) %>
+          </h3>
+          <p class="job-slat-company"><%= job.company %></p>
+        </div>
+        <p class="job-slat-city"><%= job.city %></p>
+      </li>
+      <li class="job-slat">
+        <div class="job-slat-hgroup">
+          <h3 class="job-slat-title">
+            <%= link job.title, to: job_path(@conn, :show, job) %>
+          </h3>
+          <p class="job-slat-company"><%= job.company %></p>
+        </div>
+        <p class="job-slat-city"><%= job.city %></p>
+      </li>
     <% end %>
   </ol>
 <% else %>

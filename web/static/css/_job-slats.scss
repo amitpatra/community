@@ -1,5 +1,5 @@
 .job-slats {
-  margin-bottom: $large-spacing;
+  margin-bottom: $x-large-spacing;
 }
 
 .job-slat {
@@ -17,16 +17,18 @@
 }
 
 .job-slat-title {
-  font-size: $large-font-size;
+  font-size: 1.5em;
   font-weight: 400;
   margin-bottom: $x-small-spacing;
 }
 
 .job-slat-company {
+  font-size: 1.25em;
   color: $light-font-color;
   margin-bottom: 0;
 }
 
 .job-slat-city {
   color: $light-font-color;
+  font-size: 1.25em;
 }
